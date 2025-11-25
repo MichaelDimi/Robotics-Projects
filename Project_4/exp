@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "RRT:"
+for i in {1..30}; do
+    python3 assign.py --alg rrt --geom rectangle --iter 100 --blind --fast
+done
+
+echo "RRT*:"
+for i in {1..30}; do
+    python3 assign.py --alg rrtstar --geom rectangle --iter 100 --blind --fast
+done
